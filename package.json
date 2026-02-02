@@ -1,0 +1,42 @@
+{
+  "name": "@a_jackie_z/event-bus",
+  "version": "1.0.2",
+  "description": "An event bus using RabbitMQ",
+  "license": "MIT",
+  "author": "Sang Lu <connect.with.sang@gmail.com>",
+  "repository": {
+    "url": "https://github.com/a-jackie-z/event-bus"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test:consumer": "LOG_PRETTY=true LOG_LEVEL=debug node dist/lib/tests/consumer.js",
+    "test:producer": "LOG_PRETTY=true LOG_LEVEL=debug node dist/lib/tests/producer.js",
+    "test:broadcast-consumer": "LOG_PRETTY=true LOG_LEVEL=debug node dist/lib/tests/broadcast-consumer.js",
+    "test:broadcast-producer": "LOG_PRETTY=true LOG_LEVEL=debug node dist/lib/tests/broadcast-producer.js",
+    "test:mixed-consumer": "LOG_PRETTY=true LOG_LEVEL=debug node dist/lib/tests/mixed-consumer.js",
+    "test:mixed-producer": "LOG_PRETTY=true LOG_LEVEL=debug node dist/lib/tests/mixed-producer.js"
+  },
+  "dependencies": {
+    "@a_jackie_z/logger": "^1.0.0",
+    "amqplib": "^0.10.9"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.8",
+    "@types/node": "^25.0.9",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
