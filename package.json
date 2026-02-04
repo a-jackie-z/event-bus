@@ -5,7 +5,7 @@
   "license": "MIT",
   "author": "Sang Lu <connect.with.sang@gmail.com>",
   "repository": {
-    "url": "https://github.com/a-jackie-z/event-bus"
+    "url": "git+https://github.com/a-jackie-z/event-bus.git"
   },
   "type": "module",
   "main": "./dist/index.js",
