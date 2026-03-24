@@ -1,6 +1,6 @@
 {
   "name": "@a_jackie_z/event-bus",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "An event bus using RabbitMQ",
   "license": "MIT",
   "author": "Sang Lu <connect.with.sang@gmail.com>",
@@ -29,14 +29,14 @@
     "test:mixed-producer": "LOG_PRETTY=true LOG_LEVEL=debug node dist/lib/tests/mixed-producer.js"
   },
   "dependencies": {
-    "@a_jackie_z/logger": "^1.0.3",
+    "@a_jackie_z/logger": "^1.0.4",
     "amqplib": "^0.10.9"
   },
   "devDependencies": {
     "@types/amqplib": "^0.10.8",
-    "@types/node": "^25.3.0",
+    "@types/node": "^25.5.0",
     "ts-node": "^10.9.2",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   }
 }

@@ -26,7 +26,8 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "ignoreDeprecations": "6.0"
   },
   "include": [
     "index.ts",
